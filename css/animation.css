@@ -1,0 +1,58 @@
+/* 이미지 확대하는 애니메이션 */
+@keyframes gogo{
+    from {
+        background-size: 170% 140%;
+    }
+    to {
+        background-size: 130% 100%;
+    }
+}
+/* 위로 올라가는 애니메이션 */
+@keyframes up {
+    0%{
+        transform: translateY(70px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+/* 중간부터 퍼지는 선 애니메이션 */
+@keyframes line {
+    from {
+        width: 0;
+    }
+    100%{
+        width: 180px;
+    }
+}
+/* 위로 올라가는 애니메이션 */
+@keyframes wipe-ver {
+    from {
+        height: 100%;
+    }
+    to {
+        height: 0;
+    }
+}
+/* 오른쪽에서 왼쪽으로 */
+@keyframes wipe-hor {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0;
+    }
+}
+/* 약간 돌아가는 애니메이션 */
+@keyframes rotateAni {
+    from {
+        transform: rotate(-30deg);
+        opacity: 0;
+    }
+    to {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}
